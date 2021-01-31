@@ -12,7 +12,8 @@ class _RandomWordState extends State<RandomWords> {
   @override
   Widget build(BuildContext context) {
     final wordPair = WordPair.random();
-    return MaterialApp(
+    return Text(wordPair.asPascalCase);
+    /*return MaterialApp(
       title: 'Welcome to Flutter',
       home: Scaffold(
         appBar: AppBar(
@@ -23,6 +24,6 @@ class _RandomWordState extends State<RandomWords> {
           child: Text(wordPair.asPascalCase),
         ),
       ),
-    );
+    );*/
   }
 }
