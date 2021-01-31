@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(RandomWords());
 
-class MyApp extends StatelessWidget {
+class RandomWords extends StatefulWidget {
+  @override
+  _RandomWordState createState() => _RandomWordState();
+}
+
+class _RandomWordState extends State<RandomWords> {
   @override
   Widget build(BuildContext context) {
     final wordPair = WordPair.random();
