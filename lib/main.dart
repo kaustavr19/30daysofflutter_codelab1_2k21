@@ -39,13 +39,8 @@ class _RandomWordState extends State<RandomWords> {
   Widget build(BuildContext context) {
     //final wordPair = WordPair.random();
     return MaterialApp(
-      title: 'Welcome to Flutter',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Startup Name Generator'),
-        ),
-        body: _buildSuggestions(),
-      ),
+      title: 'Startup Name Generator',
+      home: RandomWords(),
     );
   }
 }
