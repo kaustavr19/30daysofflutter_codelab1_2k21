@@ -9,6 +9,8 @@ class RandomWords extends StatefulWidget {
 }
 
 class _RandomWordState extends State<RandomWords> {
+  final List<WordPair> _suggestions = <WordPair>[];
+  final TextStyle _biggerFont = const TextStyle(fontSize: 18);
   @override
   Widget build(BuildContext context) {
     //final wordPair = WordPair.random();
