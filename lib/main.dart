@@ -27,7 +27,7 @@ class _RandomWordState extends State<RandomWords> {
     );
   }
 
-  Widget _buildRow(WordPair pair){
+  Widget _buildRow(WordPair pair) {
     return ListTile(
       title: Text(
         pair.asPascalCase,
@@ -42,13 +42,9 @@ class _RandomWordState extends State<RandomWords> {
       title: 'Welcome to Flutter',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Welcome to Flutter'),
+          title: Text('Startup Name Generator'),
         ),
-        body: Center(
-          //child: Text('Hello World'),
-          //child: Text(wordPair.asPascalCase),
-          child: RandomWords(),
-        ),
+        body: _buildSuggestions(),
       ),
     );
   }
